@@ -33,17 +33,22 @@ public class AddressBook {
 	 }
 	 public static void main(String[] args){
 		 Scanner sc = new Scanner(System.in)
+		 Addressbook blackbook = new Addressbook();
+		 
 		 menu();
 		 int choice = sc.nextInt();
 		 
+		
+		 
 		 if(choice == 1) {
-			 
+			 System.out.println("What is your name");
+			 String name = 
 		 }
 		 if(choice == 2) {
 			 
 		 }
 		 if(choice == 3) {
-			 System.out.println("You have:" numfriends);
+			 System.out.println("You have:" blackbook.numfriends);
 		 }
 		 if(choice == 4) {
 			 
