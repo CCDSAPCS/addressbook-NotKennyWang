@@ -43,7 +43,7 @@ public class AddressBook {
 			 
 		 }
 		 if(choice == 3) {
-			 
+			 System.out.println("You have:" numfriends);
 		 }
 		 if(choice == 4) {
 			 
