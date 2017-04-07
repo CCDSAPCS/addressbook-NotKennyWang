@@ -10,7 +10,7 @@ public class AddressBook {
    	 public AddressBook() {
 		friends = new Contact[10];
 		numfriends = 0;
-   	 public int numContacts() {
+   	 public int numfriends() {
 	    return friends.size;
     	}
 	 public int haveContact(String s) {
@@ -38,23 +38,37 @@ public class AddressBook {
 		 menu();
 		 int choice = sc.nextInt();
 		 
-		
-		 
 		 if(choice == 1) {
-			 System.out.println("What is your name");
-			 String name = 
+			 
+			 System.out.println("What is their name?");
+			 String name = sc.next();
+			 System.out.println("How old is " + name + "?");
+			 int age = sc.nextInt();
+			 System.out.println("What is " + name + "'s phone number?");
+			 int phoneNumber = sc.nextInt();
+			 System.out.println("What month was " + name + " born in (in numerical fashion)?");
+			 int month = sc.nextInt();
+			 System.out.println("What day of the month was " + name + " born on?");
+			 int day = sc.nextInt();
+			 
+			 Contact = new Contact(name, age, phoneNumber, month, day);
 		 }
 		 if(choice == 2) {
+			 System.out.println("What contact do you want to delete?");
+			 String forWhomTheBellTolls = sc.next();
 			 
+			 Delete(forWhomTheBellTolls);
 		 }
 		 if(choice == 3) {
 			 System.out.println("You have:" blackbook.numfriends);
 		 }
 		 if(choice == 4) {
-			 
+			 for(int i = 0; i < blackbook.numfriends; i++){
+				 friends[i].printContact();
+			 }
 		 }
 		 if(choice == 5) {
-			 
+			 System.out.println("Okay, bye loser");
 		 }
 		 else {
 			 System.out.println(" Choose one of the options idiot");
